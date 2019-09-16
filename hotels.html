@@ -22,11 +22,49 @@
       <h1 class="visually-hidden">Отели Седоны</h1>
       <section>
         <img src="img/background-photo.jpg" width="1200" height="800" alt="Вид на каньон">
-        <h2 class="visually-hidden">Фильтры</h2>
-        <!--Здесь будут фильтры-->
+        <form>
+         <h2 class="visually-hidden">Фильтры</h2>
+         <div>
+            <p>Инфраструктура</p>
+            <div>
+              <label><input type="checkbox">Бассейн</label>
+              <label><input type="checkbox">Парковка</label>
+              <label><input type="checkbox">WI-FI</label>
+            </div>
+          </div>
+          <div>
+            <p>Тип жилья</p>
+            <label><input type="checkbox">Гостиница</label>
+            <label><input type="checkbox">Мотель</label>
+            <label><input type="checkbox">Апартаменты</label>
+          </div>
+          <div>
+            <p>Стоимость в сутки (Р):</p>
+            <input type="range" name="priceinput" min="0" max="4000" value="0">
+            <output>0</output>
+            <!--Надо разобраться с ползунком-->
+          </div>
+          <input type="button" value="Показать">
+        </form>
       </section>
       <section>
-        <h2 class="visually-hidden">Список отелей</h2>
+        <h2 class="visually-hidden">Результат поиска отелей</h2>
+        <div>
+          <p>Найдено</p>
+          <p>3</p>
+        </div>
+        <div>
+          <p>Сортировка</p>
+          <ul>
+           <li><a>По цене</a></li>
+           <li><a href="">По типу</a></li>
+           <li><a href="">По рейтингу</a></li>
+          </ul>
+        </div>
+        <div>
+         <button><img src="img/icon-up-dir.svg" width="11" height="10" alt="Сортировать по возрастанию цены"></button>
+         <button><img src="img/icon-down-dir.svg" width="11" height="10" alt="Сортировать по убыванию цены"></button>
+        </div>
         <ul>
           <li>
             <h3><a href="">Amara Resort & Spa</a></h3>

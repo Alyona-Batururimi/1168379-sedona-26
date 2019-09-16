@@ -8,7 +8,7 @@
     <header>
       <nav>
         <a>
-          <img src="img/logo.png" width="138" height="70" alt="Седона">
+          <img src="img/logo.png" width="138" height="70" alt="Логотип города Седона">
         </a>
         <ul>
           <li><a href="">Информация</a></li>
@@ -20,13 +20,13 @@
     </header>
     <main>
       <div>
-        <h1>Седона</h1>
-        <img src="img/welcome.png" width="457" height="352" alt="Welcome to the gorgeous Sedona">
-        <img src="img/background-photo.jpg" width="1200" height="773" alt="Вид в окрестностях Седоны">
-        <img src="img/polygon.png" width="1200" height="57" alt="Декорации">
+        <h1 class="visually-hidden">Поиск и бронирование отелей в городе Седона</h1>
+        <img src="img/welcome.png" width="457" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks.">
+        <img src="img/background-photo.jpg" width="1200" height="773" alt="Вид на коньон в окрестностях Седоны">
+        <img src="img/polygon.png" width="1200" height="57" alt="Декоративный белый фон">
       </div>
       <section>
-        <h2>Преимущества</h2>
+        <h2 class="visually-hidden">Преимущества</h2>
         <p>Седона — небольшой городок в Аризоне, заслуживающий большего! </p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ol>
@@ -77,19 +77,41 @@
           </ul>
       </section>
       <section>
-        <h2>Поиск гостиницы в Седоне</h2>
         <p>Заинтересовались?</p>
         <p>Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне  </p>
-        <!--Здесь будет форма-->
+        <form>
+          <h2>Поиск гостиницы в Седоне</h2>
+          <div>
+            <label for="arriving-date">Дата заезда</label>
+            <input type="date" name="calendar" id="arriving-date">
+          </div>
+          <div>
+            <label for="depart-date">Дата выезда</label>
+            <input type="date" name="calendar" id="depart-date">
+          </div>
+          <div class="half-width">
+            <label for="adult">Взрослые</label>
+            <button class="delete-person" value="Удалить">-</button>
+            <input type="number" id="adult" min="0" max="20" step="1" Value="0">
+            <button class="add-person" value="Добавить">+</button>
+          </div>
+          <div class="half-width">
+            <label for="child">Взрослые</label>
+            <button class="delete-person" value="Удалить">-</button>
+            <input type="number" id="child" min="0" max="20" step="1" Value="0">
+            <button class="add-person" value="Добавить">+</button>
+          </div>
+          <input type="button" value="Найти" name="search">
+        </form>
       </section>
     </main>
     <footer>
       <p>#VISITSEDONA</p>
       <div>
         <ul>
-          <li><a href="#"><img src="img/twitter.svg" width="17" height="15" alt="Твиттер"></a></li>
-          <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Фейсбук"></a></li>
-          <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="Ютуб"></a></li>
+            <li><a href="#"><img src="img/twitter.svg" width="17" height="15" alt="Страница города Седона в Твиттере"></a></li>
+            <li><a href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Страница города Седона в Фейсбуке"></a></li>
+            <li><a href="#"><img src="img/youtube.svg" width="20" height="16" alt="Страница города Седона на Ютубе"></a></li>
         </ul>
       </div>
       <div>
