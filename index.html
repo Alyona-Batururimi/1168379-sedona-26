@@ -76,34 +76,34 @@
             </li>
           </ul>
       </section>
-      <section>
-        <p>Заинтересовались?</p>
-        <p>Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне  </p>
-        <form>
-          <h2>Поиск гостиницы в Седоне</h2>
-          <div>
-            <label for="arriving-date">Дата заезда</label>
-            <input type="date" name="calendar" id="arriving-date">
+      <p>Заинтересовались?</p>
+      <p>Укажите предполагаемые даты поездки,  и мы покажем вам лучшие предложения гостиниц в седоне  </p>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <fieldset>
+          <legend>Поиск гостиницы в Седоне</legend>
+         <div>
+           <label for="arriving-date">Дата заезда</label>
+           <input type="date" name="calendar" id="arriving-date">
           </div>
-          <div>
-            <label for="depart-date">Дата выезда</label>
-            <input type="date" name="calendar" id="depart-date">
-          </div>
-          <div class="half-width">
+         <div>
+           <label for="depart-date">Дата выезда</label>
+           <input type="date" name="calendar" id="depart-date">
+         </div>
+         <div>
             <label for="adult">Взрослые</label>
             <button class="delete-person" value="Удалить">-</button>
             <input type="number" id="adult" min="0" max="20" step="1" Value="0">
             <button class="add-person" value="Добавить">+</button>
           </div>
-          <div class="half-width">
-            <label for="child">Взрослые</label>
-            <button class="delete-person" value="Удалить">-</button>
-            <input type="number" id="child" min="0" max="20" step="1" Value="0">
-            <button class="add-person" value="Добавить">+</button>
-          </div>
-          <input type="button" value="Найти" name="search">
-        </form>
-      </section>
+         <div>
+           <label for="child">Дети</label>
+           <button class="delete-person" value="Удалить">-</button>
+           <input type="number" id="child" min="0" max="20" step="1" Value="0">
+          <button class="add-person" value="Добавить">+</button>
+         </div>
+         <button type="submit" value="Найти">Найти</button>
+        </fieldset>
+      </form>
     </main>
     <footer>
       <p>#VISITSEDONA</p>
