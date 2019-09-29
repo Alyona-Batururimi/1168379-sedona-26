@@ -1,0 +1,251 @@
+body {
+  margin:0;
+  padding:0;
+
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: regular;
+  color: #333333;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("img/background-photo.jpg"), url("img/welcome.png"), url("polygon.png");
+  background-position: top center;
+  background-repeat:no-repeat;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+a:hover {
+  color: #81B3D2;
+}
+
+a:active {
+  color: #766357;
+}
+
+input{
+  font:inherit;
+  background-color: #F2F2F2;
+  border: none;
+}
+
+input:hover {
+  background-color: #EBEBEB;
+}
+
+input:focus {
+  background-color: #ffffff;
+  border: 2px solid #E5E5E5;
+}
+
+/* Навигация */
+.main-navigation {
+list-style: none;
+font-weight: bold;
+}
+
+/* Преимущества */
+.feature-head{
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.main-feature-list li{
+  list-style: none;
+}
+
+.feature-list li {
+  list-style: none;
+}
+
+.blue-feature {
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.blue-feature h3 {
+  font-size: 21px;
+  letter-spacing: 1px;
+}
+
+.grey-feature {
+  background-color: #EEEEEE;
+}
+
+.social-list li{
+  list-style: none;
+}
+
+/* Поиск */
+.search-question {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Форма поиска на главной */
+.search-form {
+  text-align: left;
+  color: #000000;
+  font-weight: bold;
+
+  background-color: #ffffff;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  border: none;
+}
+
+/* Кнопки */
+.primary-button {
+  font:inherit;
+  font-size:21px;
+  line-height:26px;
+  text-align:center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border:none;
+}
+
+.primary-button:hover {
+  background-color: #669EC0;
+}
+
+.primary-button:active {
+  color: #D8D8D8;
+}
+
+.secondary-button {
+  font:inherit;
+  font-size:21px;
+  line-height:26px;
+  text-align:center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #766357;
+  border:none;
+}
+
+.secondary-button:hover {
+background-color: #604E43;
+border: none;
+}
+
+.secondary-button:active {
+  color: #D8D8D8;
+}
+
+.tertiary-button {
+  background-color: #F2F2F2;
+  border:none;
+  color: #A9A9A9;
+}
+
+.tertiary-button:hover {
+  background-color: #EBEBEB;
+  border: none;
+  color: #000000;
+}
+
+.tertiary-button:active {
+  color: #669EC0;
+}
+
+.filter-button {
+  font: inherit;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid #ffffff;
+}
+
+.filter-button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Фильтры на странице списка отелей */
+.filters {
+  text-align: left;
+  background-color: #669EC0;
+  border: none;
+  color: #ffffff;
+}
+
+.filter-title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+}
+
+.filters li {
+list-style: none;
+}
+
+.sort-list {
+  list-style: none;
+  font-size: 12px;
+  line-height: 18px;
+  color: #81B3D2;
+}
+
+.filter-background {
+  filter: blur(10px);
+}
+
+/* Cортировка*/
+.main-content {
+ text-align: left;
+}
+
+.sort-list a{
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sort-list a:hover{
+  color: #81b3d2;
+  border-bottom: 1px dashed #81b3d2;
+}
+
+.sort-list a:active{
+  color: #000000;
+  border-bottom: none;
+}
+
+/* Карточка отеля*/
+.hotel-list {
+  list-style: none;
+}
+
+.rate {
+  background-color: #F2F2F2;
+  border: none;
+  text-align: center;
+  color: #666666;
+}
+
+/* Подвал */
+.visitsedona {
+  font-size: 21px;
+  font-weight: bold;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  …
+}
+
