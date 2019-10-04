@@ -1,6 +1,6 @@
 body {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 
   font-family: 'PT Sans', sans-serif;
   font-size: 14px;
@@ -10,53 +10,59 @@ body {
   text-transform: uppercase;
 
   background-color: #ffffff;
-  background-image: url("img/background-photo.jpg"), url("img/welcome.png"), url("polygon.png");
   background-position: top center;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
   text-align: center;
 }
 
 a {
   text-decoration: none;
-  color: #000000;
 }
 
-a:hover {
-  color: #81B3D2;
-}
-
-a:active {
-  color: #766357;
-}
-
-input{
-  font:inherit;
-  background-color: #F2F2F2;
+input {
+  font: inherit;
+  background-color: #f2f2f2;
   border: none;
 }
 
 input:hover {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
 }
 
 input:focus {
   background-color: #ffffff;
-  border: 2px solid #E5E5E5;
+  border: 2px solid #e5e5e5;
 }
 
 /* Навигация */
 .main-navigation {
-list-style: none;
-font-weight: bold;
+  list-style: none;
+}
+
+.main-navigation a {
+  font-weight: bold;
+  color: #000000;
+}
+
+.main-navigation a:hover {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: #766357;
+}
+
+.background-index {
+  background-image: url("img/background-photo.jpg"), url("img/welcome.png"), url("polygon.png");
 }
 
 /* Преимущества */
-.feature-head{
+.feature-head {
   font-size: 21px;
   font-weight: bold;
 }
 
-.main-feature-list li{
+.main-feature-list li {
   list-style: none;
 }
 
@@ -76,10 +82,10 @@ font-weight: bold;
 }
 
 .grey-feature {
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
 }
 
-.social-list li{
+.social-list li {
   list-style: none;
 }
 
@@ -102,62 +108,62 @@ font-weight: bold;
 
 /* Кнопки */
 .primary-button {
-  font:inherit;
-  font-size:21px;
-  line-height:26px;
-  text-align:center;
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
 
   background-color: #81b3d2;
-  border:none;
+  border: none;
 }
 
 .primary-button:hover {
-  background-color: #669EC0;
+  background-color: #669ec0;
 }
 
 .primary-button:active {
-  color: #D8D8D8;
+  color: #d8d8d8;
 }
 
 .secondary-button {
-  font:inherit;
-  font-size:21px;
-  line-height:26px;
-  text-align:center;
+  font: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  text-align: center;
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
 
   background-color: #766357;
-  border:none;
+  border: none;
 }
 
 .secondary-button:hover {
-background-color: #604E43;
-border: none;
+  background-color: #604e43;
+  border: none;
 }
 
 .secondary-button:active {
-  color: #D8D8D8;
+  color: #d8d8d8;
 }
 
 .tertiary-button {
-  background-color: #F2F2F2;
-  border:none;
+  background-color: #f2f2f2;
+  border: none;
   color: #A9A9A9;
 }
 
 .tertiary-button:hover {
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   border: none;
   color: #000000;
 }
 
 .tertiary-button:active {
-  color: #669EC0;
+  color: #669ec0;
 }
 
 .filter-button {
@@ -176,7 +182,7 @@ border: none;
 /* Фильтры на странице списка отелей */
 .filters {
   text-align: left;
-  background-color: #669EC0;
+  background-color: #669ec0;
   border: none;
   color: #ffffff;
 }
@@ -188,14 +194,14 @@ border: none;
 }
 
 .filters li {
-list-style: none;
+  list-style: none;
 }
 
 .sort-list {
   list-style: none;
   font-size: 12px;
   line-height: 18px;
-  color: #81B3D2;
+  color: #81b3d2;
 }
 
 .filter-background {
@@ -207,12 +213,12 @@ list-style: none;
  text-align: left;
 }
 
-.sort-list a{
+.sort-list a {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dashed #81b3d2;
 }
 
-.sort-list a:hover{
+.sort-list a:hover {
   color: #81b3d2;
   border-bottom: 1px dashed #81b3d2;
 }
@@ -228,10 +234,24 @@ list-style: none;
 }
 
 .rate {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border: none;
   text-align: center;
   color: #666666;
+}
+
+.hotel-list a {
+  font-size: 21px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.hotel-list a:hover {
+  color: #81b3d2;
+}
+
+.hotel-list a:active {
+  color: #766357;
 }
 
 /* Подвал */
@@ -246,6 +266,5 @@ list-style: none;
   width: 1px;
   height: 1px;
   margin: -1px;
-  …
 }
 
