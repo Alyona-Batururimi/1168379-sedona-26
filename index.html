@@ -96,22 +96,22 @@
           <legend class="secondary-button">Поиск гостиницы в Седоне</legend>
          <div>
            <label for="arriving-date">Дата заезда</label>
-           <input type="date" name="calendar" id="arriving-date">
+           <input type="date" name="calendar" id="arriving-date" class="date">
           </div>
          <div>
            <label for="depart-date">Дата выезда</label>
-           <input type="date" name="calendar" id="depart-date">
+           <input type="date" name="calendar" id="depart-date" class="date">
          </div>
          <div>
             <label for="adult">Взрослые</label>
             <button type="button" class="delete-person tertiary-button" value="Удалить">-</button>
-            <input type="number" id="adult" min="0" max="20" step="1" Value="0">
+            <input type="number" id="adult" class="number" min="0" max="20" step="1" Value="0">
             <button type="button" class="add-person tertiary-button" value="Добавить">+</button>
           </div>
          <div>
            <label for="child">Дети</label>
            <button type="button" class="delete-person tertiary-button" value="Удалить">-</button>
-           <input type="number" id="child" min="0" max="20" step="1" Value="0">
+           <input type="number" id="child" class="number" min="0" max="20" step="1" Value="0">
           <button type="button" class="add-person tertiary-button" value="Добавить">+</button>
          </div>
          <button type="submit" value="Найти" class="primary-button">Найти</button>

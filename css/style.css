@@ -19,21 +19,6 @@ a {
   text-decoration: none;
 }
 
-input {
-  font: inherit;
-  background-color: #f2f2f2;
-  border: none;
-}
-
-input:hover {
-  background-color: #ebebeb;
-}
-
-input:focus {
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-}
-
 /* Навигация */
 .main-navigation {
   list-style: none;
@@ -104,6 +89,32 @@ input:focus {
   background-color: #ffffff;
   box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
   border: none;
+}
+
+.search-form input {
+  font: inherit;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.search-form input:hover {
+  background-color: #ebebeb;
+}
+
+.search-form input:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  box-sizing: border-box;
+}
+
+.date {
+  width: 346px;
+  height: 38px;
+}
+
+.number {
+  width: 38px;
+  height: 38px;
 }
 
 /* Кнопки */
