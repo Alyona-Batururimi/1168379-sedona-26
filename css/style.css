@@ -171,7 +171,6 @@ padding-right: 140px;
   margin-bottom: 20px;
 }
 
-/* ДОДУМАТЬ С КАРТИНКАМИ!!! */
 .feature-image-first {
   width: 800px;
   height: 256px;
@@ -477,17 +476,27 @@ padding-right: 140px;
 }
 
 /* Фильтры на странице списка отелей */
-.filters {
-  text-align: left;
-  background-color: #669ec0;
-  border: none;
+.hotel-filters {
+  height: 160px;
+  padding: 26px 72px 31px;
   color: #ffffff;
+  background: #81b3d2 no-repeat center;
+  background-image: url(../img/filter\ background.png);
+}
+
+.filters {
+  display: flex;
+  justify-content: flex-start;
+
+  text-align: left;
+  border: none;
 }
 
 .filter-title {
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
+  margin-bottom: 24px;
 }
 
 .filters li {
@@ -500,13 +509,41 @@ padding-right: 140px;
   line-height: 18px;
 }
 
-.filter-background {
-  filter: blur(10px);
+.infrastructure {
+  width: 255px;
+  height: 154px;
+}
+
+.filter-item {
+  height: 23px;
+  margin-top: 22px;
+}
+
+/* Сложный фильтр */
+.complex-filter {
+
 }
 
 /* Cортировка*/
 .main-content {
  text-align: left;
+}
+
+.sort-menu{
+  display: flex;
+  justify-content: flex-start;
+  height: 26px;
+  padding: 30px 0px 30px 72px;
+}
+
+.sort-title {
+  display: flex;
+  justify-content: flex-start;
+  width: 164px;
+}
+
+.sort-title:first-child p{
+  margin-right: 5px;
 }
 
 .sort-list a {
