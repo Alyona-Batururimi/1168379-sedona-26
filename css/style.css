@@ -136,8 +136,9 @@ img {
 
 .feature-second {
   display: flex;
-  max-height: 256px;
   overflow: hidden;
+
+  background-color: #81b3d2;
 }
 
 .feature-head {
@@ -151,12 +152,21 @@ img {
 .main-feature-list {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  background-color: #eeeeee;
+  z-index: 2;
 
   list-style: none;
 }
 
+.main-feature-list-item {
+  width: 400px;
+}
+
 .feature-first-main {
   display: flex;
+
+  background-color: #81b3d2;
 }
 
 .feature-list {
@@ -164,9 +174,9 @@ img {
   justify-content: space-around;
   flex-wrap: wrap;
   width: 1200px;
-  height: 330px;
 
   color: #333333;
+  background-color: #ffffff;
 
   list-style: none;
 }
@@ -177,15 +187,14 @@ img {
 }
 
 .feature-list p {
-  margin-bottom: 85px;
+  margin-bottom: 79px;
 
   line-height: 21px;
 }
 
 .blue-feature {
-  padding: 43px 42px 50px;
+  padding: 43px 42px 46px;
   width: 316px;
-  height: 163px;
 
   background-color: #81b3d2;
   background-repeat: no-repeat;
@@ -229,7 +238,6 @@ img {
   position: relative;
   padding-top: 43px;
   width: 400px;
-  height: 166px;
   z-index: 2;
 
   background-color: #eeeeee;
@@ -275,7 +283,6 @@ img {
   display: block;
   position: absolute;
   width: 568px;
-  height: 395px;
   margin-left: auto;
   margin-right: auto;
   left: 0;
@@ -414,6 +421,8 @@ img {
 .map {
   width: 100%;
   height: 593px;
+
+  background-image: url(../img/map.png);
 }
 
 /* Кнопки */
@@ -602,9 +611,7 @@ img {
 
 /* Фильтры на странице списка отелей */
 .hotel-filters {
-  height: 165px;
   padding-top: 22px;
-  padding-bottom: 31px;
 
   color: #ffffff;
   background: #81b3d2 no-repeat center;
@@ -641,13 +648,12 @@ img {
 
 .infrastructure {
   width: 193px;
-  height: 154px;
   margin-left: 62px;
 }
 
 .filter-item {
   height: 23px;
-  margin-top: 22px;
+  margin-bottom: 22px;
 }
 
 .filter-checkbox {
