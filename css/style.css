@@ -33,6 +33,7 @@ img {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+
   background-color: #ffffff;
   box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
 }
@@ -56,9 +57,9 @@ img {
 
 .main-menu {
   display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
-  justify-content: space-between;
 
   list-style: none;
 }
@@ -102,6 +103,7 @@ img {
 /* Картинка после шапки на главной */
 .background-index {
   height: 508px;
+
   background-image: url("../img/polygon.svg"), url("../img/background-photo.jpg");
   background-color: #f2f2f2;
   background-repeat: no-repeat;
@@ -119,9 +121,10 @@ img {
 }
 
 .about-info-title {
+  margin-bottom: 27px;
+
   font-size: 21px;
   font-weight: bold;
-  margin-bottom: 27px;
   text-align: center;
 }
 
@@ -138,15 +141,17 @@ img {
 }
 
 .feature-head {
+  margin-bottom: 20px;
+
   font-size: 21px;
   font-weight: bold;
-  margin-bottom: 20px;
   text-align: center;
 }
 
 .main-feature-list {
   display: flex;
   flex-wrap: wrap;
+
   list-style: none;
 }
 
@@ -156,12 +161,13 @@ img {
 
 .feature-list {
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
   width: 1200px;
   height: 330px;
-  justify-content: space-around;
 
   color: #333333;
+
   list-style: none;
 }
 
@@ -172,16 +178,18 @@ img {
 
 .feature-list p {
   margin-bottom: 85px;
+
   line-height: 21px;
 }
 
 .blue-feature {
-  background-color: #81b3d2;
-  background-repeat: no-repeat;
-  color: #ffffff;
   padding: 43px 42px 50px;
   width: 316px;
   height: 163px;
+
+  background-color: #81b3d2;
+  background-repeat: no-repeat;
+  color: #ffffff;
 }
 
 .blue-feature:last-child {
@@ -193,8 +201,9 @@ img {
 }
 
 .blue-feature h3 {
-  font-size: 21px;
   margin-bottom: 20px;
+
+  font-size: 21px;
 }
 
 .feature-image-first {
@@ -217,9 +226,12 @@ img {
 }
 
 .grey-feature {
+  position: relative;
   padding-top: 43px;
   width: 400px;
   height: 166px;
+  z-index: 2;
+
   background-color: #eeeeee;
 }
 
@@ -229,14 +241,19 @@ img {
 
 /* Поиск */
 .search-question {
+  margin: 10px auto 24px;
+
   font-size: 30px;
   font-weight: bold;
-  margin: 10px auto 24px;
 }
 
 /* Форма поиска на главной */
-.search {
+.search-wrapper {
   padding-top: 50px;
+  position: relative;
+  z-index: 2;
+
+  background-color: #ffffff;
 }
 
 .search-info {
@@ -245,12 +262,13 @@ img {
 }
 
 .search-container {
+  padding: 0;
+  z-index: 1;
+
   text-align: left;
   color: #000000;
   font-weight: bold;
   border: none;
-  padding: 0;
-  z-index: 1;
 }
 
 .search-form-container {
@@ -262,10 +280,29 @@ img {
   margin-right: auto;
   left: 0;
   right: 0;
+  z-index: 1;
+}
+
+@keyframes moveUp {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-397px);}
+}
+
+@keyframes moveDown {
+  0% { transform: translateY(-397px); }
+  100% { transform: translateY(0);}
+}
+
+ .search-form-hide {
+  display: block;
+
+  animation: moveUp 0.6s forwards;
 }
 
 .search-form-show {
-  /* display: none; */
+  display: block;
+
+  animation: moveDown 0.6s forwards;
 }
 
 .search-form {
@@ -294,7 +331,6 @@ img {
   height: 38px;
   margin-bottom: 30px;
 }
-
 
 .add-number {
   display: flex;
@@ -342,6 +378,7 @@ img {
   padding-bottom: 15px;
   margin-top: 24px;
   height: 58px;
+
   font-size: 21px;
 }
 
@@ -354,6 +391,7 @@ img {
   padding-left: 15px;
   width: 334px;
   height: 38px;
+
   font: inherit;
   background-color: #f2f2f2;
   border: none;
@@ -366,6 +404,7 @@ img {
 .number {
   width: 38px;
   height: 38px;
+
   font: inherit;
   background-color: #f2f2f2;
   border: none;
@@ -380,15 +419,17 @@ img {
 /* Кнопки */
 .primary-button {
   display: inline-block;
+
   font-weight: bold;
   text-align: center;
+  text-transform: uppercase;
   color: #ffffff;
   vertical-align: middle;
-  text-transform: uppercase;
-  cursor: pointer;
 
   background-color: #81b3d2;
   border: none;
+
+  cursor: pointer;
 }
 
 .primary-button:hover {
@@ -401,6 +442,10 @@ img {
 
 .secondary-button {
   display: inline-block;
+  padding-left: 16px;
+  padding-right: 16px;
+  height: 26px;
+
   font: inherit;
   font-size: 14px;
   font-weight: bold;
@@ -408,15 +453,11 @@ img {
   color: #ffffff;
   vertical-align: middle;
   text-transform: uppercase;
-  cursor: pointer;
 
   background-color: #766357;
   border: none;
 
-  padding-left: 16px;
-  padding-right: 16px;
-  height: 26px;
-  margin-right: 6px;
+  cursor: pointer;
 }
 
 .secondary-button:hover {
@@ -442,6 +483,7 @@ img {
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
+
   cursor: pointer;
 }
 
@@ -451,11 +493,15 @@ img {
 }
 
 .search-open-button {
+  position: relative;
   width: 568px;
   height: 86px;
   margin-top: 35px;
   font-size: 21px;
+  z-index: 3;
+
   font-weight: bold;
+
   cursor: pointer;
 }
 
@@ -464,8 +510,10 @@ img {
   left: 475px;
   width: 38px;
   height: 38px;
+
   border: none;
   background-color: transparent;
+
   cursor: pointer;
 }
 
@@ -485,8 +533,10 @@ img {
   position: relative;
   width: 38px;
   height: 38px;
+
   border: none;
   background-color: #f2f2f2;
+
   cursor: pointer;
 }
 
@@ -498,6 +548,7 @@ img {
 
   width: 12px;
   height: 3px;
+
   border-radius: 1px;
   background-color: #a9a9a9;
 }
@@ -522,6 +573,7 @@ img {
 
   width: 11px;
   height: 3px;
+
   border-radius: 1px;
   background-color: #a9a9a9;
 }
@@ -534,6 +586,7 @@ img {
 
   width: 3px;
   height: 11px;
+
   border-radius: 1px;
   background-color: #a9a9a9;
 }
@@ -543,6 +596,7 @@ img {
   padding-right: 16px;
   margin-right: 3px;
   height: 26px;
+
   font-size: 14px;
 }
 
@@ -551,6 +605,7 @@ img {
   height: 165px;
   padding-top: 22px;
   padding-bottom: 31px;
+
   color: #ffffff;
   background: #81b3d2 no-repeat center;
   background-image: url(../img/filter\ background.png);
@@ -566,10 +621,11 @@ img {
 }
 
 .filter-title {
+  margin-bottom: 24px;
+
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
-  margin-bottom: 24px;
 }
 
 .filters li {
@@ -577,9 +633,10 @@ img {
 }
 
 .sort-list {
-  list-style: none;
   font-size: 12px;
   line-height: 18px;
+
+  list-style: none;
 }
 
 .infrastructure {
@@ -595,9 +652,10 @@ img {
 
 .filter-checkbox {
   display: inline-block;
-  vertical-align: top;
   position: relative;
   padding-left: 39px;
+  vertical-align: top;
+
   cursor: pointer;
 }
 
@@ -611,6 +669,7 @@ img {
 
   width: 23px;
   height: 23px;
+
   background-image: url("../img/checkbox-off.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -626,6 +685,7 @@ img {
 
   width: 27px;
   height: 23px;
+
   background-image: url("../img/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -646,9 +706,10 @@ img {
 }
 
 .complex-filter-title {
+  margin-bottom: 9px;
+
   font-size: 16px;
   line-height: 21px;
-  margin-bottom: 9px;
   font-weight: bold;
 }
 
@@ -732,6 +793,7 @@ img {
   border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+
   cursor: pointer;
 }
 
@@ -757,6 +819,7 @@ img {
   justify-content: flex-start;
   height: 26px;
   padding: 30px 72px;
+
   border-bottom: 1px solid #e5e5e5;
 }
 
@@ -796,57 +859,72 @@ img {
 a.arrow {
   display: inline-block;
   margin: 0 6px;
+
   font-size: 0;
 }
 
 .arrow::before {
+  content: "";
+
   display: inline-block;
+
   border: 9px solid #cacaca;
   border-right-width: 5px;
   border-right-color: transparent;
   border-left-width: 5px;
   border-left-color: transparent;
-  content: "";
 }
 
 .arrow-up:hover::before {
+  content: "";
+
+  display: inline-block;
+
   border: 9px solid #000000;
   border-right-width: 5px;
   border-right-color: transparent;
   border-left-width: 5px;
   border-left-color: transparent;
-  content: "";
   border-top-width: 0;
 }
 
 .arrow-down:hover::before {
+  content: "";
+
+  display: inline-block;
+
   border: 9px solid #000000;
   border-right-width: 5px;
   border-right-color: transparent;
   border-left-width: 5px;
   border-left-color: transparent;
-  content: "";
   border-bottom-width: 0;
 }
 
 .arrow-up:active::before {
+  content: "";
+
+  display: inline-block;
+
   border: 9px solid #81b3d2;
   border-right-width: 5px;
   border-right-color: transparent;
   border-left-width: 5px;
   border-left-color: transparent;
-  content: "";
   border-top-width: 0;
 }
 
 .arrow-down:active::before,
 .arrow-down::before{
+  content: "";
+
+  display: inline-block;
+
   border: 9px solid #81b3d2;
   border-right-width: 5px;
   border-right-color: transparent;
   border-left-width: 5px;
   border-left-color: transparent;
-  content: "";
   border-bottom-width: 0;
 }
 
@@ -911,12 +989,13 @@ a.arrow {
 }
 
 .rate {
+  width: 110px;
+  margin-top: 47px;
+
   background-color: #f2f2f2;
   border: none;
   text-align: center;
   color: #666666;
-  width: 110px;
-  margin-top: 47px;
 }
 
 .hotel-list-name {
@@ -946,10 +1025,11 @@ a.arrow {
 .star {
   width: 18px;
   height: 17px;
+  margin-left: 5px;
   overflow: hidden;
+
   background: url(../img/star.svg) no-repeat top left;
   background-size: 18px 17px;
-  margin-left: 5px;
 }
 
 
@@ -960,11 +1040,12 @@ a.arrow {
 
 .footer {
   display: flex;
-  align-items: center;
   justify-content: center;
-  background-color: rgba(255,255,255,.9);
-  height: 120px;
+  align-items: center;
   width: 100%;
+  height: 120px;
+
+  background-color: rgba(255,255,255,.9);
 }
 
 .footer-index {
@@ -974,9 +1055,10 @@ a.arrow {
 }
 
 .visitsedona {
+  width: 400px;
+
   font-size: 21px;
   font-weight: bold;
-  width: 400px;
 }
 
 .social-list {
@@ -986,8 +1068,9 @@ a.arrow {
 }
 
 .social-item {
-  list-style: none;
   margin: 3px;
+
+  list-style: none;
   cursor: pointer;
 }
 
@@ -996,6 +1079,7 @@ a.arrow {
   display: block;
   width: 46px;
   height: 48px;
+
   background-color: #81b3d2;
 }
 
@@ -1012,6 +1096,7 @@ a.arrow {
 
   width: 17px;
   height: 17px;
+
   background-image: url("../img/twitter.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1026,6 +1111,7 @@ a.arrow {
 
   width: 12px;
   height: 22px;
+
   background-image: url("../img/fb-icon.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -1040,6 +1126,7 @@ a.arrow {
 
   width: 20px;
   height: 16px;
+
   background-image: url("../img/youtube.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
