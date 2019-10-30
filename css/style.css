@@ -250,6 +250,11 @@ img {
   height: 256px;
 }
 
+.grey-feature-third {
+  width: 250px;
+  margin: 0 auto;
+}
+
 .grey-feature {
   position: relative;
   padding-top: 43px;
