@@ -194,9 +194,13 @@ img {
 }
 
 .feature-list p {
-  margin-bottom: 74px;
+  margin-bottom: 79px;
 
   line-height: 21px;
+}
+
+.feature-list li:last-child {
+  margin-top: -4px;
 }
 
 .blue-feature {
@@ -223,6 +227,11 @@ img {
 
 .blue-feature-text {
   width: 305px;
+  margin: 0 auto;
+}
+
+.white-feature-text {
+  width: 300px;
   margin: 0 auto;
 }
 
@@ -270,10 +279,14 @@ img {
 
 /* Поиск */
 .search-question {
-  margin: 7px auto 34px;
+  margin: 0px auto 26px;
 
   font-size: 30px;
   font-weight: bold;
+  line-height: 36px;
+}
+
+.search-paragraph {
   line-height: 24px;
 }
 
@@ -510,8 +523,8 @@ img {
 }
 
 .filter-button {
-  display: block;
-  margin: 0 auto;
+  display: inline-block;
+  margin-left: 82px;
   padding: 6px 35px;
 
   font-size: 14px;
@@ -535,7 +548,7 @@ img {
   position: relative;
   width: 568px;
   height: 86px;
-  margin-top: 35px;
+  margin-top: 33px;
   font-size: 21px;
   z-index: 3;
 
@@ -646,7 +659,7 @@ img {
 
   color: #ffffff;
   background: #81b3d2 no-repeat center;
-  background-image: url("../img/filter\ background.jpeg");
+  background-image: url("../img/filter-background.jpg");
 }
 
 .filters {
@@ -775,7 +788,7 @@ img {
 .price-controls .min-price,
 .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 61px;
 }
 
 .price-controls input {
