@@ -424,8 +424,8 @@ img {
 }
 
 .date-label {
-  width: 100px;
-  margin-right: 11px;
+  width: 106px;
+  margin-right: 5px;
 
   line-height: 26px;
 }
@@ -543,7 +543,8 @@ img {
   cursor: pointer;
 }
 
-.filter-button:hover {
+.filter-button:hover,
+.filter-button:active {
   background-color: #ffffff;
   color: #000000;
 }
@@ -743,6 +744,10 @@ img {
 .filter-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-checkbox input[type="checkbox"]:disabled + .checkbox-indicator {
+  opacity: 0.3;
 }
 
 .checkbox-visually-hidden {
