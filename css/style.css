@@ -726,50 +726,32 @@ img {
   background-position: 0 0;
 }
 
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
 .filter-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
   outline: thin dotted;
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
-  content: "";
-
+.checkbox-visually-hidden {
   position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-
-  width: 27px;
-  height: 23px;
-
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
-
-/* .filter-item input[type="checkbox"]:checked + .filter-checkbox::before {
-  content: "";
-
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-
-  width: 27px;
-  height: 23px;
-
-  background-image: url("../img/checkbox-on.svg");
-  background-repeat: no-repeat;
-  background-position: 0 0;
-} */
-
-.filter-item input[type="checkbox"]:disabled + .filter-checkbox::before {
-  opacity: 0.3;
-}
-
-/* .filter-item input[type="checkbox"] {
-  display: none;
-} */
 
 /* Сложный фильтр */
 .complex-filter {
