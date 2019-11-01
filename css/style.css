@@ -424,8 +424,8 @@ img {
 }
 
 .date-label {
-  width: 105px;
-  margin-right: 6px;
+  width: 100px;
+  margin-right: 11px;
 
   line-height: 26px;
 }
@@ -438,7 +438,7 @@ img {
 }
 
 .date {
-  padding-left: 15px;
+  padding-left: 12px;
   width: 334px;
   height: 38px;
 
