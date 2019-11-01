@@ -426,11 +426,15 @@ img {
 .date-label {
   width: 100px;
   margin-right: 11px;
+
+  line-height: 26px;
 }
 
 .date-label-child {
   width: 55px;
   margin-right: 9px;
+
+  line-height: 26px;
 }
 
 .date {
@@ -709,11 +713,8 @@ img {
   cursor: pointer;
 }
 
-.filter-checkbox::before {
-  content: "";
-
+.filter-checkbox input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
-  display: block;
   top: 0;
   left: 0;
 
@@ -725,7 +726,12 @@ img {
   background-position: 0 0;
 }
 
-.filter-item input[type="checkbox"]:checked + .filter-checkbox::before {
+.filter-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+.filter-checkbox input[type="checkbox"]:checked + .checkbox-indicator {
   content: "";
 
   position: absolute;
@@ -741,13 +747,29 @@ img {
   background-position: 0 0;
 }
 
+/* .filter-item input[type="checkbox"]:checked + .filter-checkbox::before {
+  content: "";
+
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+} */
+
 .filter-item input[type="checkbox"]:disabled + .filter-checkbox::before {
   opacity: 0.3;
 }
 
-.filter-item input[type="checkbox"] {
+/* .filter-item input[type="checkbox"] {
   display: none;
-}
+} */
 
 /* Сложный фильтр */
 .complex-filter {
@@ -869,7 +891,10 @@ img {
   display: flex;
   justify-content: flex-start;
   height: 26px;
-  padding: 30px 72px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 72px;
+  padding-right: auto;
 
   border-bottom: 1px solid #e5e5e5;
 }
@@ -877,7 +902,7 @@ img {
 .sort-title {
   display: flex;
   justify-content: flex-start;
-  width: 169px;
+  width: 164px;
 }
 
 .sort-title:first-child p{
@@ -888,7 +913,8 @@ img {
   display: flex;
   align-items: center;
   height: 26px;
-  width: 850px;
+  width: 805px;
+  margin-right: 20px;
   margin-top: 3px;
 }
 
@@ -1201,6 +1227,8 @@ a.arrow {
 .footer-info p {
   display: block;
   padding-right: 6px;
+
+  line-height: 26px;
 }
 
 .footer-info a {
